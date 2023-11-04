@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  background-color: #0a193a;
+}
+
+.container {
+  background-color: #333;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.draggable {
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid black;
+  cursor: move;
+  transition: transform ease-in-out 0.2s;
+  transform: scale(1);
+}
+
+.draggable.dragging {
+  opacity: .5;
+  transition: transform border ease-in-out 0.2s;
+  transform: scale(95%);
+}
